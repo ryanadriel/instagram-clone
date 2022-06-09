@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  min-height: 100vw;
+  background-color: rgb(243, 243, 243);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instashop-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vw;
+}
+
+.instashop-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instashop-phone img {
+  height: 50rem;
+}
+
+.instashop-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instashop-logo {
+  height: 8rem;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 8rem;
+}
+
+.instashop-login {
+  background-color: #0095f6;
+  color: #ffffff;
+  margin-top: 2rem;
+  padding: 8px 35px;
+  border-radius: 4px;
+}
+
+.instashop-logout {
+  color: #0095f6;
+}
+
+.not-account {
+  color: rgb( 160, 160, 160);
+  margin-top: 2rem;
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width:  10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('./img/5847e95fcef1014c0b5e4822.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('./img/5a902dbf7f96951c82922875.png');
+}
+
+/* media queris */
+
+@media (max-width: 1024px) {
+  .instashop-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .instashop-wrapper {
+    max-width: 90%;
+  }
+
+  .instashop-phone {
+    display: none;
+  }
+
+  .instashop-continue {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
